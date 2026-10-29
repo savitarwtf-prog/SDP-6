@@ -1,4 +1,9 @@
 package observer;
 
-public class FlightEvent {
-}
+public record FlightEvent(
+        String flightNumber,
+        EventType type,
+        String terminalId,
+        String gateId,
+        int delayMinutes
+) {}

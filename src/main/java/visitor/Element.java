@@ -1,4 +1,5 @@
 package visitor;
 
-public class Element {
+public interface Element {
+    <R> R accept(Visitor<R> visitor);
 }

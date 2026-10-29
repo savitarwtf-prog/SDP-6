@@ -1,4 +1,7 @@
 package observer;
 
-public class Subject {
+public interface Subject<E> {
+    void subscribe(EventType type, Observer<E> observer);
+    void unsubscribe(EventType type, Observer<E> observer);
+    void notifyObservers(E event);
 }

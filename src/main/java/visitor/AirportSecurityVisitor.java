@@ -24,4 +24,7 @@ public class AirportSecurityVisitor implements Visitor<String> {
 
     @Override
     public String visit(BaggageCarousel carousel) { return "Carousel OK"; }
+
+    @Override
+    public String visit(ParkingLot lot) { return "Parking OK"; }
 }
