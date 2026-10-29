@@ -46,14 +46,3 @@ The project includes JUnit 5 unit tests covering:
 ## Conclusion
 
 In this assignment, a flexible, scalable, and thread-safe Airport Operations Management System was designed and implemented using Java 17. By combining the Observer and Visitor design patterns, the system cleanly decouples real-time event notifications from complex operations over hierarchical domain structures. The implementation adheres to Clean Code principles, utilizes Constructor Injection, and avoids global locks in concurrent event processing. The two dedicated Git commits demonstrate the fundamental trade-off of the Visitor pattern: adding new operations is highly extensible without modifying existing domain elements, whereas adding new domain elements requires cascading changes across all visitor implementations.
-
-## How to Run
-
-1. Build Project:
-   mvn clean compile
-
-2. Run Application:
-   mvn exec:java -Dexec.mainClass="Main"
-
-3. Run All Tests:
-   mvn test
